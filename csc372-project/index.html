@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy Some Cards</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-primary" href="/index.html">Lucky's Card Shop</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/products.html">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/common">Common</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/rare">Rare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/superrare">Super Rare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/ultrarare">Ultra Rare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/ultimaterare">Ultimate Rare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/secretrare">Secret Rare</a>
+                        </li>
+                    </ul>
+                </div>
+                                <div>
+                    <form class="form-inline my-2 my-lg-0 nav-link">
+                        <a class="nav-link text-warning" href="/cart">Cart</a>
+                    </form>
+                </div>
+                                <div>
+                    <form class="form-inline my-2 my-lg-0" th:action="@{/logout}" method="post">
+                        <button type="submit" class="btn btn-link my-2 my-sm-0">Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+</head>
+<body class= "bg-dark d-flex flex-column min-vh-100">
+
+
+<div class="row flex-grow-1">
+    <div class="col-auto">
+        <input type="text" id="from" name="from" class="form-control" placeholder="Dark Magician">
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+</div>
+
+    <div class="home-row">
+        <a href="mc2en004.html"><img src="/cards/mc2en004.jpg" /></a>
+        <a href="dds002.html"><img src="/cards/dds002.jpg" /></a>
+        <a href="tu06en00.html"><img src="/cards/tu06en00.jpg" /></a>
+    </div>
+
+    <footer class="bg-primary text-light py-3">
+        <div class="container-fluid text-center">
+            <p class="mb-0">&copy; 2024 Lucky's Card Shop</p>
+            <p class="mb-0">I actually have these cards so lmk if you want. email: j_lee10@uncg.edu</p>
+        </div>
+    </footer>
+</body>
+</html>

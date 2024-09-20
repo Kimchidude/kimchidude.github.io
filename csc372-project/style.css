@@ -1,0 +1,39 @@
+﻿.home-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    max-width: 100vw;
+}
+
+.home-row img {
+    width: 30vw;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.home-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    max-width: 100vw;
+}
+
+.products img {
+    width: 30vw;
+    height: 242px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.important-text {
+    color: red;
+}
