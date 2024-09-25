@@ -44,17 +44,6 @@
     display: block; 
 }
 
-.meal-plan-list{
-    display:flex;
-    flex-direction: column;
-}
-
-.meal-total{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
 p{
     font-size: 24px;
 }
@@ -75,4 +64,30 @@ a{
 .total{
     color: green;
     font-size: 32px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: monospace;
+    margin-inline-start: 0px;
+    width: fit-content;
+}
+
+.meal-plan {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.meal-plan-list {
+    flex: 1;
+}
+
+.meal-total {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
 }
