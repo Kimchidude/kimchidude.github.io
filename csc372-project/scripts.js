@@ -58,6 +58,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Initialize total price on page load
     updateTotalPrice();
 });
