@@ -23,6 +23,7 @@ const choiceImages = {
     scissors: 'images/scissors.PNG'
 };
 
+
 // random computer choice
 function getComputerChoice() {
     const randomIndex = Math.floor(Math.random() * choices.length);
