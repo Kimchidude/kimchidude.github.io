@@ -18,9 +18,9 @@ const images = document.querySelectorAll('.choices img');
 
 // mapping choices to images
 const choiceImages = {
-    rock: 'images/rock.PNG',
-    paper: 'images/paper.PNG',
-    scissors: 'images/scissors.PNG'
+    rock: '/images/rock.PNG',
+    paper: '/images/paper.PNG',
+    scissors: '/images/scissors.PNG'
 };
 
 
@@ -129,7 +129,7 @@ resetBtn.addEventListener('click', () => {
     outcomeDisplay.textContent = 'Result: ';
 
     // reset computer throw image to question mark
-    computerThrowImg.src = 'images/question-mark.PNG';
+    computerThrowImg.src = '/images/question-mark.PNG';
     computerThrowImg.classList.remove('selected-computer');
 
     // reset all classes to default
