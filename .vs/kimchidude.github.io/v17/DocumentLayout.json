@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-hw\\hw4\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-hw\\hw4\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-hw\\hw4\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-hw\\hw4\\index.html||{C76D83F8-A489-11D0-8195-00A0C91BBEE3}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-hw\\hw4\\index.html||{C76D83F8-A489-11D0-8195-00A0C91BBEE3}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-hw\\hw4\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-hw\\hw4\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-hw\\hw4\\style.css",
               "RelativeDocumentMoniker": "csc372-hw\\hw4\\style.css",
@@ -46,8 +46,7 @@
               "RelativeToolTip": "csc372-hw\\hw4\\style.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-08T23:11:33.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T23:11:33.36Z"
             },
             {
               "$type": "Document",
@@ -57,14 +56,14 @@
               "RelativeDocumentMoniker": "csc372-hw\\hw4\\script.js",
               "ToolTip": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-hw\\hw4\\script.js",
               "RelativeToolTip": "csc372-hw\\hw4\\script.js",
-              "ViewState": "AgIAAC0AAAAAAAAAAAA5wD0AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-10-08T23:11:32.448Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-hw\\hw4\\index.html",
               "RelativeDocumentMoniker": "csc372-hw\\hw4\\index.html",
