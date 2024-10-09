@@ -1,0 +1,47 @@
+﻿.container {
+    text-align: center;
+    margin: 20px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.computer-choice {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.choices img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.selected-player {
+    border: 3px solid red; 
+}
+
+.selected-computer {
+    border: 3px solid blue;
+}
+
+.result {
+    margin: 20px;
+    font-size: 24px;
+}
+
+.scoreboard {
+    font-size: 20px;
+    margin: 20px;
+}
+
+#resetBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: lightgray;
+    cursor: pointer;
+}
