@@ -1,10 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\csc372-hw",
-    "\\csc372-hw\\hw2",
-    "\\csc372-hw\\hw3",
-    "\\csc372-hw\\hw4"
+    "\\csc372-project",
+    "\\csc372-project\\db",
+    "\\csc372-project\\public",
+    "\\csc372-project\\public\\js",
+    "\\csc372-project\\routes",
+    "\\csc372-project\\views"
   ],
+  "SelectedNode": "\\csc372-project\\public\\product-edit.html",
   "PreviewInSolutionExplorer": false
 }

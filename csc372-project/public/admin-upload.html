@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <nav>
+        <ul style="list-style-type: none; padding: 10px; margin: 0; background: #f8f9fa;">
+            <li style="display: inline; margin-right: 20px;">
+                <a class="navbar-brand text-primary" href="index.html">Lucky's Card Shop</a>
+            </li>
+            <li style="display: inline; margin-right: 20px;">
+                <a href="admin-products.html">Manage Products</a>
+            </li>
+            <li style="display: inline; margin-right: 20px;">
+                <a href="admin-upload.html">Upload Product</a>
+            </li>
+            <li style="display: inline; float: right;">
+                <button onclick="" style="border: none; background: none; cursor: pointer;">Sign Out</button>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Admin Product Upload</h1>
+
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <p>Upload a JSON, CSV, or text file containing product data. The file should follow 
+                one of the formats described below. Only files with the following extensions are 
+                accepted: <strong>.json, .csv, .txt</strong>.</p>
+        </div>
+
+        <div class="example">
+            <h4>Example JSON format:</h4>
+            <pre>
+[
+    {
+        "name": "Blue-Eyes White Dragon",
+        "price": 25.99,
+        "description": "A legendary dragon with immense power.",
+        "condition": Near mint,
+        "edition": "Limited edition",
+        "image": "./cards/mc2en004.jpg",
+        "rarity": "Secret rare"
+    },
+    {
+        "name": "Dark Magician",
+        "price": 15.99,
+        "description": "A powerful magician skilled in dark arts.",
+        "condition": "Played",
+        "edition": "1st edition",
+        "image": "./cards/dds002.jpg",
+        "rarity": "Super"
+    }
+]
+            </pre>
+        </div>
+
+<form action="/products/upload-product-file" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" accept=".json,.csv,.txt" required />
+    <button type="submit">Upload</button>
+</form>
+
+    </div>
+</body>
+</html>

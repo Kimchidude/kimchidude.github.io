@@ -1,0 +1,11 @@
+[
+    {
+        "name": "Blue-Eyes White Dragon",
+        "price": 25.99,
+        "description": "A legendary dragon with immense power.",
+        "condition": "Near mint",
+        "edition": "Limited edition",
+        "image": "./cards/mc2en004.jpg",
+        "rarity": "Secret rare"
+    }
+]

@@ -1,0 +1,9 @@
+    {
+        "name": "Dark Magician",
+        "price": 15.99,
+        "description": "A powerful magician skilled in dark arts.",
+        "condition": "Played",
+        "edition": "1st edition",
+        "image": "./cards/dds002.jpg",
+        "rarity": "Super"
+    }
