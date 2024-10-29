@@ -1,9 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const sqlite3 = require('sqlite3').verbose();
 const multer = require('multer'); // Import multer
 const path = require('path');
-const fs = require('fs');
 const csv = require('csv-parser'); // For CSV parsing
 
 let db;
@@ -24,30 +22,9 @@ const upload = multer({
     }
 });
 
-
 // Function to initialize the router
 function initializeRoutes(database) {
     db = database;
-
-    // Create the products table if it doesn't exist
-    db.serialize(() => {
-        db.run(`CREATE TABLE IF NOT EXISTS products (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT,
-            description TEXT ,
-            price REAL,
-            condition TEXT ,
-            edition TEXT,
-            image TEXT,
-            rarity TEXT
-        )`, (err) => {
-            if (err) {
-                console.error('Error creating table: ' + err.message);
-            } else {
-                console.log('Products table created or already exists.');
-            }
-        });
-    });
 
     const parse = require('csv-parse/sync');
 
@@ -103,7 +80,7 @@ function initializeRoutes(database) {
         else if (ext === '.csv') {
             try {
                 const fileContent = fileBuffer.toString('utf8');
-                const records = csvParse(fileContent, {
+                const records = parse(fileContent, {
                     columns: true,
                     skip_empty_lines: true,
                 });
@@ -183,8 +160,6 @@ function initializeRoutes(database) {
             return res.status(400).send('Unsupported file type.');
         }
     });
-
-
 
     // Get all products
     router.get('/', (req, res) => {
@@ -286,11 +261,9 @@ router.put('/api/products/:id', (req, res) => {
     });
 });
 
-
-
 // Initialize routes with the db instance
 module.exports = (database) => {
-    db = database; // Assign the database instance to db in this module
-    initializeRoutes(db); // Initialize routes with the database instance
-    return router; // Return the configured router
+    db = database;
+    initializeRoutes(db);
+    return router; 
 };
