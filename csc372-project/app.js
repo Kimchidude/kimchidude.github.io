@@ -3,7 +3,7 @@ const sqlite3 = require('sqlite3').verbose();
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
-const productsRoutes = require('./routes/products'); // Import products route
+const productsRoutes = require('./public/js/products'); // Import products route
 
 const app = express();
 const PORT = process.env.PORT || 3000;
