@@ -161,6 +161,45 @@ function initializeRoutes(database) {
             );
         });
     });
+
+    // Checkout route: empties the user's cart after purchase
+    router.post('/api/checkout', (req, res) => {
+        const userId = req.session.userId; // Ensure user is logged in
+
+        if (!userId) {
+            return res.status(401).json({ error: 'You must be logged in to checkout.' });
+        }
+
+        // Find the user's active cart and clear it
+        db.run(
+            `UPDATE carts SET status = 'purchased' WHERE user_id = ? AND status = 'new'`,
+            [userId],
+            function (err) {
+                if (err) {
+                    console.error('Error checking out:', err);
+                    return res.status(500).json({ error: 'Failed to checkout.' });
+                }
+
+                if (this.changes === 0) {
+                    return res.status(404).json({ error: 'No active cart found.' });
+                }
+
+                // Clear cart products
+                db.run(
+                    `DELETE FROM cartproducts WHERE cart_id = (SELECT id FROM carts WHERE user_id = ? AND status = 'new')`,
+                    [userId],
+                    function (err) {
+                        if (err) {
+                            console.error('Error clearing cart products:', err);
+                            return res.status(500).json({ error: 'Failed to clear cart products.' });
+                        }
+                        res.json({ message: 'Checkout successful.' });
+                    }
+                );
+            }
+        );
+    });
+
 }
 // Initialize routes with the db instance
 module.exports = (database) => {

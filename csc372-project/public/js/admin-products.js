@@ -37,9 +37,9 @@ function confirmDelete(productId) {
         $.ajax({
             url: `/products/delete/${productId}`,
             type: 'POST',
-            success: function () {
-                // Redirect back to the admin products page after successful deletion
-                window.location.href = 'admin-products.html';
+            success: function (data) {
+                alert(data.message);
+                window.location.href = 'admin-products.html'; // Redirect back to the admin products page after successful deletion
             },
             error: function (err) {
                 console.error('Error deleting product:', err);

@@ -65,14 +65,15 @@ function initializeRoutes(database) {
                 stmt.finalize((err) => {
                     if (err) {
                         console.error('Error finalizing statement:', err.message);
-                        return res.status(500).send('Error inserting products.');
+                        return res.redirect('/admin-upload.html');
                     }
                     console.log('All products inserted successfully!');
-                    res.send('Products uploaded successfully!');
+                    res.redirect('/admin-products.html');
                 });
+
             } catch (err) {
                 console.error('Error processing JSON file:', err.message);
-                return res.status(500).send('Error processing JSON file: ' + err.message);
+                return res.redirect('/admin-upload.html');
             }
         }
 
@@ -161,6 +162,28 @@ function initializeRoutes(database) {
         }
     });
 
+    // Add a single product
+    router.post('/add', (req, res) => {
+        const { name, description, price, condition, edition, image, rarity } = req.body;
+
+        if (!name || !description || !price || !condition || !edition || !image || !rarity) {
+            return res.status(400).send('Missing required fields.');
+        }
+
+        const query = `
+        INSERT INTO products (name, description, price, condition, edition, image, rarity) 
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+    `;
+        db.run(query, [name, description, price, condition, edition, image, rarity], function (err) {
+            if (err) {
+                console.error('Error adding product:', err.message);
+                return res.status(500).send('Error adding product.');
+            }
+            console.log(`Added product: ${name}`);
+            res.status(200).send('Product added successfully.');
+        });
+    });
+
     // Get all products
     router.get('/api/products', (req, res) => {
         const query = 'SELECT * FROM products';  // Adjust the query based on your table structure
@@ -215,7 +238,8 @@ function initializeRoutes(database) {
             if (err) {
                 return res.status(500).send(err.message);
             }
-            res.redirect('/products');
+            // Send a JSON response instead of redirecting
+            res.json({ message: 'Product deleted successfully.' });
         });
     });
 

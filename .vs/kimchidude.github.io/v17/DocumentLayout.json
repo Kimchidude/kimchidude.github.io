@@ -3,8 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\admin-upload.html||{C76D83F8-A489-11D0-8195-00A0C91BBEE3}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-project\\public\\admin-upload.html||{C76D83F8-A489-11D0-8195-00A0C91BBEE3}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\details.html||{C76D83F8-A489-11D0-8195-00A0C91BBEE3}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-project\\public\\details.html||{C76D83F8-A489-11D0-8195-00A0C91BBEE3}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\routes\\products.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-project\\routes\\products.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\js\\product-edit.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-project\\public\\js\\product-edit.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\js\\admin-products.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-project\\public\\js\\admin-products.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\js\\signedin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-project\\public\\js\\signedin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\routes\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-project\\routes\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-project\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\routes\\carts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-project\\routes\\carts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\js\\cart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-project\\public\\js\\cart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\cart.html||{C76D83F8-A489-11D0-8195-00A0C91BBEE3}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-project\\public\\cart.html||{C76D83F8-A489-11D0-8195-00A0C91BBEE3}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\js\\details.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:csc372-project\\public\\js\\details.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +75,140 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "admin-upload.html",
+              "DocumentMoniker": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\admin-upload.html",
+              "RelativeDocumentMoniker": "csc372-project\\public\\admin-upload.html",
+              "ToolTip": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\admin-upload.html",
+              "RelativeToolTip": "csc372-project\\public\\admin-upload.html",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-07T05:59:24.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "app.js",
+              "DocumentMoniker": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\app.js",
+              "RelativeDocumentMoniker": "csc372-project\\app.js",
+              "ToolTip": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\app.js",
+              "RelativeToolTip": "csc372-project\\app.js",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-07T05:42:40.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "users.js",
+              "DocumentMoniker": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\routes\\users.js",
+              "RelativeDocumentMoniker": "csc372-project\\routes\\users.js",
+              "ToolTip": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\routes\\users.js",
+              "RelativeToolTip": "csc372-project\\routes\\users.js",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAQwGUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-07T05:41:50.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "signedin.js",
+              "DocumentMoniker": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\js\\signedin.js",
+              "RelativeDocumentMoniker": "csc372-project\\public\\js\\signedin.js",
+              "ToolTip": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\js\\signedin.js",
+              "RelativeToolTip": "csc372-project\\public\\js\\signedin.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-07T05:39:00.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "product-edit.js",
+              "DocumentMoniker": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\js\\product-edit.js",
+              "RelativeDocumentMoniker": "csc372-project\\public\\js\\product-edit.js",
+              "ToolTip": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\js\\product-edit.js",
+              "RelativeToolTip": "csc372-project\\public\\js\\product-edit.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-07T05:17:50.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "admin-products.js",
+              "DocumentMoniker": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\js\\admin-products.js",
+              "RelativeDocumentMoniker": "csc372-project\\public\\js\\admin-products.js",
+              "ToolTip": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\js\\admin-products.js",
+              "RelativeToolTip": "csc372-project\\public\\js\\admin-products.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-07T05:17:43.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "products.js",
+              "DocumentMoniker": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\routes\\products.js",
+              "RelativeDocumentMoniker": "csc372-project\\routes\\products.js",
+              "ToolTip": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\routes\\products.js",
+              "RelativeToolTip": "csc372-project\\routes\\products.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-07T05:17:28.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "cart.html",
+              "DocumentMoniker": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\cart.html",
+              "RelativeDocumentMoniker": "csc372-project\\public\\cart.html",
+              "ToolTip": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\cart.html",
+              "RelativeToolTip": "csc372-project\\public\\cart.html",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-07T04:55:12.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "carts.js",
+              "DocumentMoniker": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\routes\\carts.js",
+              "RelativeDocumentMoniker": "csc372-project\\routes\\carts.js",
+              "ToolTip": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\routes\\carts.js",
+              "RelativeToolTip": "csc372-project\\routes\\carts.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-07T04:50:12.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "details.js",
+              "DocumentMoniker": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\js\\details.js",
+              "RelativeDocumentMoniker": "csc372-project\\public\\js\\details.js",
+              "ToolTip": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\js\\details.js",
+              "RelativeToolTip": "csc372-project\\public\\js\\details.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-07T04:40:07.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "cart.js",
+              "DocumentMoniker": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\js\\cart.js",
+              "RelativeDocumentMoniker": "csc372-project\\public\\js\\cart.js",
+              "ToolTip": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\js\\cart.js",
+              "RelativeToolTip": "csc372-project\\public\\js\\cart.js",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAlwGgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-07T04:39:53.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "details.html",
               "DocumentMoniker": "C:\\Users\\Jun\\OneDrive - UNCG\\CSC 372\\372github\\kimchidude.github.io\\csc372-project\\public\\details.html",
               "RelativeDocumentMoniker": "csc372-project\\public\\details.html",

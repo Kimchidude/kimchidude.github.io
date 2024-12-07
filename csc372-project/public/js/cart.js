@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const randomFee = 1;
     const taxRate = 0.0675;
 
+    // Fetch cart data and display it
     fetch(`/carts/api/cart/${userId}`)
         .then(response => {
             if (!response.ok) {
@@ -39,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <button class="add-quantity">+</button>
                             </div>
                             <div class="item-total">Item total: <span class="item-total-price" data-item-total="${itemTotal}">$${itemTotal}</span></div>
-                            <button class="delete-item" data-product-id="${item.productId}">Delete</button>
+                            <button class="delete-item btn btn-danger" data-product-id="${item.productId}">Delete</button>
                         </div>
                     </div>
                 `;
@@ -84,6 +85,31 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // Add checkout functionality
+    const checkoutButton = document.getElementById('checkout-button');
+    if (checkoutButton) {
+        checkoutButton.addEventListener('click', () => {
+            fetch(`/carts/api/checkout`, {
+                method: 'POST',
+                credentials: 'same-origin' // This ensures cookies/session are sent
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    alert(data.message);
+                    location.reload();
+                })
+                .catch(error => {
+                    console.error('Error during checkout:', error);
+                    alert(`Error during checkout: ${error.message}`);
+                });
+        });
+    }
 
     function setupQuantityControls() {
         const quantityControls = document.querySelectorAll('.quantity-control');
@@ -141,6 +167,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update displayed values
         document.getElementById('selected-total').textContent = `Item Total: $${total.toFixed(2)}`;
         document.getElementById('tax').textContent = `Tax: $${tax.toFixed(2)}`;
-        document.getElementById('total-price').textContent = `Total: $${grandTotal.toFixed(2)}`;
+        document.getElementById('total-price').innerHTML = `<span class="text-success"> Total: $${grandTotal.toFixed(2)}</span>`;
     }
 });

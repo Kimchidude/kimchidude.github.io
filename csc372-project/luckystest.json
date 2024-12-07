@@ -1,11 +1,56 @@
 [
     {
         "name": "Blue-Eyes White Dragon",
-        "price": 75,
+        "price": 150,
         "description": "A legendary dragon with immense power.",
         "condition": "Near mint",
         "edition": "Limited edition",
         "image": "./cards/sdk001.jpg",
         "rarity": "Ultra Rare"
+    },
+	{
+        "name": "Black Luster Soldier",
+        "price": 550,
+        "description": "The mightiest warrior, whose abilities equal the Blue-Eyes White Dragon.",
+        "condition": "Mint",
+        "edition": "Limited edition",
+        "image": "./cards/normalblackluster.jpg",
+        "rarity": "Ultra Rare"
+    },
+	{
+        "name": "The Sun of God Dragon",
+        "price": 200,
+        "description": "Almighty protector of the sun and sky. I beg of thee, please heed my cry. Transform thyself from orb of light and bring me victory in this fight. I beseech thee, grace our humble game but first I shall call out thy name: Winged Dragon Of Ra!",
+        "condition": "Mint",
+        "edition": "Limited edition",
+        "image": "./cards/sunofgod.jpg",
+        "rarity": "Ultra Rare"
+    },
+	{
+        "name": "Saint Dragon - The God of Osiris",
+        "price": 200,
+        "description": "Everytime the opponent summons creature into field, the point of the player's card is cut by 200 points. X stands for the number of the player's card in hand.",
+        "condition": "Mint",
+        "edition": "Limited edition",
+        "image": "./cards/godofosiris.jpg",
+        "rarity": "Ultra Rare"
+    },
+	{
+        "name": "The God of Obelisk",
+        "price": 200,
+        "description": "The Player shall sacrifice two bodies to God of Obelisk. The opponent shall be damaged. And the monsters on the field shall be destroyed.",
+        "condition": "Mint",
+        "edition": "Limited edition",
+        "image": "./cards/godofobelisk.jpg",
+        "rarity": "Ultra Rare"
+    },
+	{
+        "name": "Maxx ''C''",
+        "price": 10,
+        "description": "During either player's turn: You can send this card from your hand to the Graveyard; this turn, each time your opponent Special Summons a monster(s), immediately draw 1 card. You can only use 1 ''Maxx ''C'''' per turn.",
+        "condition": "Near Mint",
+        "edition": "Limited edition",
+        "image": "./cards/SR03EN020.jpg",
+        "rarity": "Common"
     }
 ]

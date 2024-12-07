@@ -21,7 +21,7 @@ $(document).ready(function () {
             <h2 class="details-name">${fetchedProduct.name}</h2>
             <img src="${fetchedProduct.image}" class="details-image" alt="${fetchedProduct.name}">
             <p class="details-description">${fetchedProduct.description}</p>
-            <button class="details-price" data-product-id="${fetchedProduct.id}">Price: $${fetchedProduct.price}</button>
+            <button class="btn btn-success details-price" data-product-id="${fetchedProduct.id}">Add to cart: $${fetchedProduct.price}</button>
             <p class="details-condition">Condition: ${fetchedProduct.condition}</p>
             <p class="details-edition">Edition: ${fetchedProduct.edition}</p>
             <p class="details-rarity">Rarity: ${fetchedProduct.rarity}</p>
