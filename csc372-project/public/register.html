@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="is-authenticated" content="<%= isAuthenticated %>">
+    <title>Register for Lucky's Card Shop</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <script src="/js/signedin.js" defer></script>
+    <script src="js/register.js" defer></script>
+</head>
+<body class="bg-dark text-light">
+    <header>
+        <nav id="admin-navbar" style="display: none;">
+            <ul style="list-style-type: none; padding: 10px; margin: 0; background: #f8f9fa;">
+                <li style="display: inline; margin-right: 20px;">
+                    <a href="admin-products.html">Manage Products</a>
+                </li>
+                <li style="display: inline; margin-right: 20px;">
+                    <a href="admin-upload.html">Upload Product</a>
+                </li>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-primary" href="index.html">Lucky's Card Shop</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="products.html?rarity=all">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="products.html?rarity=Common">Common</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="products.html?rarity=Rare">Rare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="products.html?rarity=Super Rare">Super Rare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="products.html?rarity=Ultra Rare">Ultra Rare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="products.html?rarity=Ultimate Rare">Ultimate Rare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="products.html?rarity=Secret Rare">Secret Rare</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="nav-link text-warning" href="cart.html">Cart</a>
+                </div>
+                <div>
+                    <form class="form-inline my-2 my-lg-0" id="auth-form" action="/users/logout" method="post">
+                        <a id="sign-in-btn" href="signin.html" class="btn btn-link my-2 my-sm-0">Sign In</a>
+                        <button id="logout-btn" type="submit" class="btn btn-link my-2 my-sm-0" style="display: none;">Logout</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Register for Lucky's Card Shop</h2>
+        <form id="register-form" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required minlength="6">
+                <div class="invalid-feedback">Please enter a password with at least 6 characters.</div>
+            </div>
+            <div class="mb-3">
+                <label for="confirm-password" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" required>
+                <div class="invalid-feedback">Passwords do not match.</div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Register</button>
+        </form>
+    </div>
+    <footer class="bg-primary text-light py-3">
+        <div class="container-fluid text-center">
+            <p class="mb-0">&copy; 2024 Lucky's Card Shop</p>
+            <p class="mb-0">I actually have these cards so lmk if you want. email: j_lee10@uncg.edu</p>
+        </div>
+    </footer>
+</body>
+</html>

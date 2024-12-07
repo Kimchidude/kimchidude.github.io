@@ -3,13 +3,26 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="is-authenticated" content="<%= isAuthenticated %>">
     <title>Buy Some Cards</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/style.css"/>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/signedin.js" defer></script>
+    <script src="/js/details.js" defer></script>
 </head>
-<body class="bg-dark text-light">
+
+<body class= "bg-dark d-flex flex-column min-vh-100 text-light">
     <header>
+        <nav id="admin-navbar" style="display: none;">
+            <ul style="list-style-type: none; padding: 10px; margin: 0; background: #f8f9fa;">
+                <li style="display: inline; margin-right: 20px;">
+                    <a href="admin-products.html">Manage Products</a>
+                </li>
+                <li style="display: inline; margin-right: 20px;">
+                    <a href="admin-upload.html">Upload Product</a>
+                </li>
+        </nav>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand text-primary" href="index.html">Lucky's Card Shop</a>
@@ -20,25 +33,25 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="products.html">All</a>
+                            <a class="nav-link text-light" href="products.html?rarity=all">All</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="">Common</a>
+                            <a class="nav-link text-light" href="products.html?rarity=Common">Common</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="">Rare</a>
+                            <a class="nav-link text-light" href="products.html?rarity=Rare">Rare</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="">Super Rare</a>
+                            <a class="nav-link text-light" href="products.html?rarity=Super Rare">Super Rare</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="">Ultra Rare</a>
+                            <a class="nav-link text-light" href="products.html?rarity=Ultra Rare">Ultra Rare</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="">Ultimate Rare</a>
+                            <a class="nav-link text-light" href="products.html?rarity=Ultimate Rare">Ultimate Rare</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="">Secret Rare</a>
+                            <a class="nav-link text-light" href="products.html?rarity=Secret Rare">Secret Rare</a>
                         </li>
                     </ul>
                 </div>
@@ -46,24 +59,17 @@
                     <a class="nav-link text-warning" href="cart.html">Cart</a>
                 </div>
                 <div>
-                    <form class="form-inline my-2 my-lg-0" th:action="@{/logout}" method="post">
-                        <button type="submit" class="btn btn-link my-2 my-sm-0">Sign In</button>
+                    <form class="form-inline my-2 my-lg-0" id="auth-form" action="/users/logout" method="post">
+                        <a id="sign-in-btn" href="signin.html" class="btn btn-link my-2 my-sm-0">Sign In</a>
+                        <button id="logout-btn" type="submit" class="btn btn-link my-2 my-sm-0" style="display: none;">Logout</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
-    <section class="product-details">
-        <div class="details-image"><img src="/cards/mc2en004.jpg" /></div>
-        <div class="details-name">Black Luster Soldier - Envoy of the Beginning</div>
-        <div class="details-description">Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) 
-            by banishing 1 LIGHT and 1 DARK monster from your GY. Once per turn, you can activate 1 of these effects.<br />
-            ● Target 1 monster on the field; banish it. This card cannot attack the turn this effect is activated.<br />
-            ● If this attacking card destroys an opponent's monster by battle: It can make a second attack in a row.</div><br />
-        <div class="details-price"><a href="">$50</a></div>
-        <div class="details-condition">Near Mint</div>
-        <div class="details-edition">Limited</div>
-    </section>
+    <div class="product-details-container">
+        <!-- Product details will be dynamically inserted here -->
+    </div>
     <footer class="bg-primary text-light py-3">
         <div class="container-fluid text-center">
             <p class="mb-0">&copy; 2024 Lucky's Card Shop</p>

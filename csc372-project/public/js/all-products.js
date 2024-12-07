@@ -14,20 +14,27 @@ $(document).ready(function () {
 
         let productHTML = '';
 
-        // Loop through the filtered products and create HTML for each product
+        // Loop through the products and create HTML for each product
         products.forEach(product => {
             productHTML += `
-            <div class="product">
-                <h2 class="details-name">${product.name}</h2>
-                <div class="product-details">
-                    <img src="${product.image}" class="details-image" alt="${product.name}">
-                    <p class="details-description">${product.description}</p>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-secondary text-light">
+                    <a href="details.html?id=${product.id}">
+                    <img src="${product.image}" class="card-img-top" alt="${product.name}"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">${product.name}</h5>
+                        <p class="card-text">$${product.price}</p>
+                        <p class="card-text">Condition: ${product.condition}</p>
+                        <p class="card-text">Edition: ${product.edition}</p>
+                        <p class="card-text">Rarity: ${product.rarity}</p>
+                        <a href="details.html?id=${product.id}" class="btn btn-info">View Details</a>
+                    </div>
                 </div>
             </div>
-        `;
+            `;
         });
 
-        // Insert the generated HTML into the .product-list div
-        $('.product-list').html(productHTML);
+        // Insert the generated HTML into the #product-list div
+        $('#product-list').html(productHTML);
     });
 });

@@ -8,7 +8,8 @@ $(document).ready(function () {
         products.forEach(product => {
             productHTML += `
              <div class="card">
-                 <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                <a href="details.html?id=${product.id}">
+                 <img src="${product.image}" class="card-img-top" alt="${product.name}"></a>
                  <div class="card-body">
                      <h5 class="card-title">${product.name}</h5>
                  </div>

@@ -3,15 +3,25 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="is-authenticated" content="<%= isAuthenticated %>">
     <title>Buy Some Cards</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/style.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/signedin.js" defer></script>
     <script src="/js/index.js" defer></script>
-    </head>
-
-<body class= "bg-dark d-flex flex-column min-vh-100">
+</head>
+<body class= "bg-dark d-flex flex-column min-vh-100 text-light">
     <header>
+    <nav id="admin-navbar" style="display: none;">
+        <ul style="list-style-type: none; padding: 10px; margin: 0; background: #f8f9fa;">
+            <li style="display: inline; margin-right: 20px;">
+                <a href="admin-products.html">Manage Products</a>
+            </li>
+            <li style="display: inline; margin-right: 20px;">
+                <a href="admin-upload.html">Upload Product</a>
+            </li>
+    </nav>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand text-primary" href="index.html">Lucky's Card Shop</a>
@@ -48,8 +58,9 @@
                     <a class="nav-link text-warning" href="cart.html">Cart</a>
                 </div>
                 <div>
-                    <form class="form-inline my-2 my-lg-0" th:action="@{/logout}" method="post">
-                        <button type="submit" class="btn btn-link my-2 my-sm-0">Sign In</button>
+                    <form class="form-inline my-2 my-lg-0" id="auth-form" action="/users/logout" method="post">
+                        <a id="sign-in-btn" href="signin.html" class="btn btn-link my-2 my-sm-0">Sign In</a>
+                        <button id="logout-btn" type="submit" class="btn btn-link my-2 my-sm-0" style="display: none;">Logout</button>
                     </form>
                 </div>
             </div>
@@ -70,7 +81,7 @@
     </div>
 
     <div class="home-row">
-
+        <!-- Product details will be dynamically inserted here -->
     </div>
 
     <footer class="bg-primary text-light py-3">

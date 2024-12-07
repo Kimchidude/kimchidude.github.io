@@ -3,10 +3,25 @@ const sqlite3 = require('sqlite3').verbose();
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
-const productsRoutes = require('./public/js/products'); // Import products route
+const productsRoutes = require('./routes/products');
+const cartsRoutes = require('./routes/carts');
+const usersRoutes = require('./routes/users');
+const session = require('express-session');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Add session middleware
+app.use(session({
+    secret: 'your-secret-key',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: false }
+}));
+app.use((req, res, next) => {
+    res.locals.isAuthenticated = !!req.session.userId;
+    next();
+});
 
 // Set up body-parser for form handling
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -59,10 +74,20 @@ const db = new sqlite3.Database(dbPath, (err) => {
 // Use products routes
 app.use('/products', productsRoutes(db));
 
-// Serve static files from the 'public' directory on index.html
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// Use carts routes
+app.use('/carts', cartsRoutes(db));
+
+// Use users routes
+app.use('/users', usersRoutes(db));
+
+// Signin status
+app.get('/auth-status', (req, res) => {
+    const isAuthenticated = !!req.session.userId;
+    res.json({ isAuthenticated, userId: req.session.userId });
 });
+
+// Serve files to public folder
+app.use(express.static('public'));
 
 // Start the server
 app.listen(PORT, () => {

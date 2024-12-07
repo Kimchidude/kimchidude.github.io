@@ -2,13 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="is-authenticated" content="<%= isAuthenticated %>">
     <title>Buy Some Cards</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/style.css"/>
-    <script src="js/scripts.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/signedin.js" defer></script>
+    <script src="/js/cart.js" defer></script>
 </head>
-<body class="bg-dark text-light">
+<body class= "bg-dark d-flex flex-column min-vh-100 text-light">
     <header>
+        <nav id="admin-navbar" style="display: none;">
+            <ul style="list-style-type: none; padding: 10px; margin: 0; background: #f8f9fa;">
+                <li style="display: inline; margin-right: 20px;">
+                    <a href="admin-products.html">Manage Products</a>
+                </li>
+                <li style="display: inline; margin-right: 20px;">
+                    <a href="admin-upload.html">Upload Product</a>
+                </li>
+        </nav>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand text-primary" href="index.html">Lucky's Card Shop</a>
@@ -45,8 +57,9 @@
                     <a class="nav-link text-warning" href="cart.html">Cart</a>
                 </div>
                 <div>
-                    <form class="form-inline my-2 my-lg-0" th:action="@{/logout}" method="post">
-                        <button type="submit" class="btn btn-link my-2 my-sm-0">Sign In</button>
+                    <form class="form-inline my-2 my-lg-0" id="auth-form" action="/users/logout" method="post">
+                        <a id="sign-in-btn" href="signin.html" class="btn btn-link my-2 my-sm-0">Sign In</a>
+                        <button id="logout-btn" type="submit" class="btn btn-link my-2 my-sm-0" style="display: none;">Logout</button>
                     </form>
                 </div>
             </div>
@@ -55,40 +68,15 @@
 <section class="cart">
     <div class="selected-items">
         <h2>Selected Cards</h2>
-        <div class="row">
-            <div class="cart-card">
-                <div class="selected-image"><img src="/cards/mc2en004.jpg" alt="Black Luster Soldier - Envoy of the Beginning" class="card-img-top"/></div>
-                <div class="card-body">
-                    <h5 class="selected-name">Black Luster Soldier - Envoy of the Beginning</h5>
-                    <div class="selected-price" data-price="50">$50</div>
-                    <div class="quantity-control">
-                        <button class="subtract-quantity">-</button>
-                        <div class="quantity" data-quantity="1">1</div>
-                        <button class="add-quantity">+</button>
-                    </div>
-                    <div class="item-total">Item total: <span class="item-total-price" data-item-total="50">$50</span></div>
-                </div>
-            </div>
-            <div class="cart-card">
-                <div class="selected-image"><img src="/cards/dds002.jpg" alt="Dark Magician" class="card-img-top"/></div>
-                <div class="card-body">
-                    <h5 class="selected-name">Dark Magician</h5>
-                    <div class="selected-price" data-price="720">$720</div>
-                    <div class="quantity-control">
-                        <button class="subtract-quantity">-</button>
-                        <div class="quantity" data-quantity="1">1</div>
-                        <button class="add-quantity">+</button>
-                    </div>
-                    <div class="item-total">Item total: <span class="item-total-price" data-item-total="720">$720</span></div>
-                </div>
-            </div>
+        <div class="row" id="cart-items-container">
+            <!-- Dynamic cart items will be inserted here by JavaScript -->
         </div>
     </div>
     <div class="cart-total">
         <div class="selected-total" id="selected-total">Item total: $0</div>
         <div class="fee">Random fee: $1</div>
         <div class="tax" id="tax">Tax: $0</div>
-        <div class="total" id="total-price">Total: $0</div>
+        <div class="grandTotal" id="total-price">Total: $0</div>
     </div>
 </section>
     <footer class="bg-primary text-light py-3">
